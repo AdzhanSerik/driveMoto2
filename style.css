@@ -191,6 +191,7 @@ nav {
 .bottomsearch form {
     height: 50px;
     display: flex;
+    /* align-items: center; */
     position: relative;
     justify-content: space-between;
 }
@@ -678,6 +679,12 @@ footer {
     display: none;
 }
 
+form img {
+    display: none;
+    width: 15px;
+    height: 15px;
+}
+
 @media(max-width: 420px) {
     .topnav {
         display: none;
@@ -738,6 +745,24 @@ footer {
 
     footer {
         display: none;
+    }
+
+    .bottomsearch form {
+        align-items: center;
+    }
+
+    form {
+        background: #F0F0F4;
+        padding: 5px 10px;
+        margin: 15px;
+    }
+
+    form button {
+        display: none;
+    }
+
+    form img {
+        display: block;
     }
 
 
