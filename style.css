@@ -359,7 +359,7 @@ form .submit {
     width: 24px;
     height: 24px;
     position: absolute;
-    left: 225px;
+    right: 15px;
     top: 15px;
 
 }
@@ -394,7 +394,7 @@ form .submit {
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 203px;
+    right: 0;
     bottom: 0px;
 }
 
@@ -737,8 +737,6 @@ form img {
 
     .bottomsearch {}
 
-    main .kategorii,
-    main .populartovars,
     main .sales {
         display: none;
     }
@@ -765,13 +763,34 @@ form img {
         display: block;
     }
 
+    .kategorii {
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+    }
 
+    .populartovars .toppop h2 {
+        text-align: center;
+    }
 
+    .populartovars .toppop .categpop {
+        overflow-x: auto;
+        width: 100%;
+        height: 7vh;
 
-}
+    }
 
+    .populartovars .sliderpop {
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+    }
 
+    .cardpop {
+        padding: 0;
+    }
 
+    .cartr {}
 
 
 
@@ -877,58 +896,62 @@ form img {
 
 
 
-/* Стили для бургера */
 
 
-.topheader a {
-    /* background-color: aliceblue; */
-    display: block;
-    width: 25px;
-    height: 50px;
-    border-radius: 50%;
-    position: relative;
-}
 
-.topheader a span,
-.topheader a span::before,
-.topheader a span::after {
-    position: absolute;
-    background-color: black;
-    top: 50%;
-    left: 50%;
-    width: 20px;
-    height: 2px;
-    margin-top: -1px;
-    margin-left: -10px;
-    border-radius: 20px;
-}
 
-.topheader a span::before,
-.topheader a span::after {
-    content: '';
-    transition: .2s;
-}
+    /* Стили для бургера */
 
-.topheader a span::before {
-    transform: translateY(-5px);
-}
 
-.topheader a span::after {
-    transform: translateY(5px);
-}
+    .topheader a {
+        /* background-color: aliceblue; */
+        display: block;
+        width: 25px;
+        height: 50px;
+        border-radius: 50%;
+        position: relative;
+    }
 
-.topheader .active span::before {
-    transform: rotate(-45deg);
-}
+    .topheader a span,
+    .topheader a span::before,
+    .topheader a span::after {
+        position: absolute;
+        background-color: black;
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 2px;
+        margin-top: -1px;
+        margin-left: -10px;
+        border-radius: 20px;
+    }
 
-.topheader .active span::after {
-    transform: rotate(45deg);
+    .topheader a span::before,
+    .topheader a span::after {
+        content: '';
+        transition: .2s;
+    }
 
-}
+    .topheader a span::before {
+        transform: translateY(-5px);
+    }
 
-.topheader .active span {
-    height: 0;
-}
+    .topheader a span::after {
+        transform: translateY(5px);
+    }
 
+    .topheader .active span::before {
+        transform: rotate(-45deg);
+    }
 
-/* Конец стилей для бургера */
+    .topheader .active span::after {
+        transform: rotate(45deg);
+
+    }
+
+    .topheader .active span {
+        height: 0;
+    }
+
+
+    /* Конец стилей для бургера */
