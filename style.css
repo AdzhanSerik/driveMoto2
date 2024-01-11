@@ -713,10 +713,12 @@ form img {
     nav {
         overflow-x: auto;
         gap: 10px;
+
     }
 
     .promotions {
         flex-direction: column;
+        margin-top: 5vh;
         /* align-items: center; */
     }
 
